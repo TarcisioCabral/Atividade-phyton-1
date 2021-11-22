@@ -1,0 +1,37 @@
+# Atividade-phyton-1
+#7.1 e 7.2 Crie um Python Script que conte quantas vezes cada nome está presente em uma
+# lista [’nome1’, ’nome2’, ...] e armazena essa contagem em um dicionário {’nome1’:
+# xvezes, ’nome2’: yvezes, ....}.
+total = list()
+nome = dict()
+while True:
+    nome.clear()
+    nome['nome'] = str(input('Digite um Nome: '))
+    
+    total.append(nome.copy())
+    while True:
+        opcao = str(input('Quer continuar? [S/N] ')).upper()[0]
+        if opcao in 'SN':
+            break
+        print('Erro ! Responda S ou N')
+    if opcao == 'N':
+        break
+print('='*30)
+print(total)
+
+while True: 
+    leitor = dict()
+    leitor['nome'] = str(input(' Qual nome deseja ver a quantidade de repetições? '))
+    
+    d = {'Repetiu ' : total.count(leitor)}
+    for i,j in d.items():
+        print('Nome :', i, ' : ', j, 'vezes')
+
+    while True:
+        opcao = str(input('Quer continuar? [S/N] ')).upper()[0]
+        if opcao in 'SN':
+            break
+        print('Erro ! Responda S ou N')
+    if opcao == 'N':
+        break
+print('='*30)
