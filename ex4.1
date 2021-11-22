@@ -1,0 +1,27 @@
+#4.1  Peça do usuário um valor em graus para um ângulo. Converta-o para radianos e,
+#usando funções da biblioteca math, imprima o seno, cosseno e tangente deste ângulo
+
+#4.2Repita o processo da questão anterior, porém utilizando a função deg2rad da 
+# biblioteca numpy para converter o ângulo de graus para radianos.
+
+import math
+import numpy
+
+num = float(input('\nDigite o valor do ângulo:\t'))
+
+aux = numpy.deg2rad(num)
+print('Valor em Radiano numpy = ' ,aux)
+
+x = math.radians(num)
+print('Valor em Radiano math = ' ,x)
+
+y = math.sin(num)
+print('Valor em Seno = ' , y)
+
+a = math.cos(num)
+print('Valor em Cosseno = ' ,a)
+
+t = math.tan(num)
+print('Valor em Tangente = ' ,t)
+
+print('\nfim\n')
