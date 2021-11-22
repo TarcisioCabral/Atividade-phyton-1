@@ -1,0 +1,12 @@
+# Atividade-phyton-1
+# 5.2 Faça um Python Script que receba um valor t referente a uma quantidade total em
+# segundos. Calcule a quantas horas:minutos:segundos a quantidade total de segudos
+# corresponde.
+
+dias = int(input("Digite quantos Dias:"))
+horas = int(input("Digite quantas Horas:"))
+minutos = int(input("Digite quantos Minutos:"))
+segundos = int(input("Digite quantos Segundos:"))
+
+total_em_segundos = dias * 24 * 3600 + horas * 3600 + minutos * 60 + segundos
+print("Convertido em segundos é igual a:  %10d segundos." % total_em_segundos)
