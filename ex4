@@ -1,0 +1,10 @@
+frase = input('digite uma frase ')
+
+print('frase digitada é:', frase)
+
+import math 
+
+math.log10(2)
+
+a = math.log10(2)
+print('valor de a = ', a)
