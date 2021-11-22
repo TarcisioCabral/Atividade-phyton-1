@@ -1,0 +1,45 @@
+# Atividade-phyton-1
+# 6.4 Faça um programa que liste para o usuário um menu com quatro opções, sendo cada
+# uma referente à uma operação matemática básica. Após o usuário ter escolhido a
+# opção, leia dois valores e realiza a operação selecionada.
+
+print('=' * 30)
+print('\t Iniciando Programa') 
+print('soma')
+print('subtração')
+print('multiplicação')
+print('divisão')
+print('sair ')
+print('=' * 30)
+
+aux = str(input('Digite qual operação deseja fazer: '))
+
+if aux == 'soma':
+        print('Digite o valor de a e b')
+        a = int(input('Valor de a ? '))
+        b = int(input('Valor de b ? '))
+        total = a + b
+        print('Valor da soma {}'.format(total))
+
+if aux == 'subtração':
+        print('Digite o valor de a e b')
+        a = int(input('Valor de a ? '))
+        b = int(input('Valor de b ? '))
+        total = a - b
+        print('Valor da subtração {}'.format(total))
+if aux == 'multiplicação':
+        print('Digite o valor de a e b')
+        a = int(input('Valor de a ? '))
+        b = int(input('Valor de b ? '))
+        total = a * b
+        print('Valor da multiplicação {}'.format(total))
+if aux == 'divisão':
+        print('Digite o valor de a e b')
+        a = int(input('Valor de a ? '))
+        b = int(input('Valor de b ? '))
+        total = a / b
+        print('Valor da divisão {}'.format(total))
+#if aux == 'sair':
+  # break
+
+print('\t Fim da Operação \n')
