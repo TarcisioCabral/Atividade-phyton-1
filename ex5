@@ -1,0 +1,27 @@
+# Atividade-phyton-1
+#5.1 Crie um Python Script que receba um número inteiro n, correspondente a um valor
+# em reais. Calcule a quantidade mínima de notas que um banco deve fornecer para
+# atingir o valor. Notas disponíveis: 100,00 reais; 50,00 reais; 10,00 reais; 1,00 real.
+print('\n\t\tInicio da Operação\n')
+valor = int(input(' Qual a quantia você deseja sacar? R$'))
+total = valor
+cedula = 100
+numCedula = 0
+
+while True:
+    if total >= cedula:
+        total -= cedula
+        numCedula += 1
+    else:
+        if numCedula > 0:
+            print('\n Total de {} cédulas de R${}'.format(numCedula, cedula))
+        if cedula == 100:
+            cedula = 50
+        elif cedula == 50:
+              cedula = 10
+        elif cedula == 10:
+              cedula = 1
+        numCedula = 0
+        if total == 0:
+            break
+print('\t\t Fim da Operação \n')
