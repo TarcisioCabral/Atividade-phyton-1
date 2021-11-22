@@ -1,0 +1,26 @@
+# Atividade-phyton-1
+#7.5 Escreva um programa que leia um número N. Em sequência, ele deve ser N números
+#e armazená-los em uma lista.
+##7.6 Com o programa acima, imprima: A soma dos itens, a média dos valores, o maior e
+#o menor valor.
+
+
+valor=int(input('Insira quantos valores deseja armazenar: \n'))
+aux=0
+total=[]
+soma=0
+while aux < valor:
+    aux2=int(input('Insia um numero: '))
+    total.append(aux2)
+    aux += 1
+    soma += aux2
+ 
+total.sort()
+print(total)
+maior=total[valor-1]
+menor=total[0]
+print('Soma: ', soma)
+print('Media: ', soma/valor)
+print('Maior: ', maior)
+print('Menor: ', menor)
+print('\t\tFIM')
